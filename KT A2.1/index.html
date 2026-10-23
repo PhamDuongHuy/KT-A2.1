@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- lang="vi" khai báo ngôn ngữ trang → hỗ trợ screen reader & SEO -->
+<html lang="vi">
+
+<head>
+  <!-- ========== METADATA BẮT BUỘC ========== -->
+  <meta charset="UTF-8" />
+  <!-- viewport: nền tảng của responsive mobile-first, khóa tỉ lệ 1:1 với thiết bị -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio CV của Phạm Dương Huy – Frontend Developer. Dự án, kỹ năng và thông tin liên hệ." />
+  <meta name="author" content="Phạm Dương Huy" />
+  <title>Phạm Dương Huy · Frontend Developer</title>
+
+  <!-- Liên kết tới file CSS tách rời (yêu cầu của bài) -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ========================================================== -->
+  <!-- HEADER: nhận diện + điều hướng chính                        -->
+  <!-- ========================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Thương hiệu cá nhân -->
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span class="brand-name">Phạm Dương Huy</span>
+      </a>
+
+      <!-- NAV dùng Flexbox (xem styles.css) -->
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================== -->
+  <!-- MAIN: toàn bộ nội dung chính của trang                      -->
+  <!-- ========================================================== -->
+  <main id="top">
+    <!-- ----- SECTION: Giới thiệu / Hero ----- -->
+    <section id="about" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Xin chào, tôi là</p>
+          <h1 class="hero-title">Phạm Dương Huy</h1>
+          <p class="hero-role">Web Developer &amp; Creative Designer</p>
+          <p class="hero-desc">
+            Tôi đam mê thiết kế và phát triển giao diện web hiện đại, thân thiện với người dùng. Với nền tảng kiến thức
+            Công nghệ thông tin, tôi luôn tìm tòi những cách ứng dụng HTML và CSS để tạo ra trải nghiệm trực quan, tinh
+            tế và dễ sử dụng trên mọi thiết bị. Tôi hướng đến việc xây dựng những sản phẩm web vừa đẹp mắt, vừa tối ưu
+            về hiệu quả và khả năng tiếp cận.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Xem dự án</a>
+            <a class="btn btn-outline" href="#contact">Liên hệ tôi</a>
+          </div>
+        </div>
+
+        <!-- Ảnh đại diện: dùng placeholder, thay bằng ảnh thật của bạn -->
+        <figure class="hero-avatar">
+          <img src="./assets/img/Huydz.png" alt="Ảnh đại diện của Phạm Dương Huy" width="320" height="320" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Kỹ năng ----- -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Kỹ năng</h2>
+        <p class="section-sub">Những công nghệ và kỹ năng tôi sử dụng thường xuyên.</p>
+
+        <ul class="skill-grid">
+          <li class="skill-chip">HTML</li>
+          <li class="skill-chip">CSS</li>
+          <li class="skill-chip">JavaScript</li>
+          <li class="skill-chip">Responsive Design</li>
+          <li class="skill-chip">GitHub</li>
+          <li class="skill-chip">Figma</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Dự án (danh sách thẻ dùng CSS Grid) ----- -->
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <h2 class="section-title">Dự án tiêu biểu</h2>
+        <p class="section-sub">Một vài sản phẩm tôi đã thực hiện.</p>
+
+        <!-- .project-grid dùng CSS Grid (xem styles.css) -->
+        <div class="project-grid">
+
+          <!-- Mỗi thẻ là một <article> độc lập, có thể đứng riêng -->
+          <article class="card">
+            <img class="card-media" src="./assets/img/robot hình người.png" alt="Robot Thông Minh" width="600"
+              height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Robot Thông Minh</h3>
+              <p class="card-desc">
+                Trang giới thiệu sản phẩm Robot hình người thông minh.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media" src="./assets/img/Lớp học.jpg""
+              alt=" Ảnh lớp học tiểu học" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Ảnh lớp học tiểu học</h3>
+              <p class="card-desc">
+                Lớp học tiểu học với các em học sinh đang học bài, thể hiện sự tập trung và hứng thú trong việc học.
+              </p>
+              <ul class="tag-list">
+                <li>Lớp học</li>
+                <li>Giáo viên</li>
+                <li>Học sinh</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media" src="assets/img/nông nghiệp.jpg" alt="Ảnh minh họa dự án Nông nghiệp" width="600"
+              height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Ảnh minh họa dự án Nông nghiệp</h3>
+              <p class="card-desc">
+                Dự án Nông nghiệp thông minh sử dụng công nghệ IoT để giám sát và quản lý cây trồng, giúp nông dân tối
+                ưu hóa
+                năng suất và chất lượng sản phẩm.
+              </p>
+              <ul class="tag-list">
+                <li>Nông nghiệp</li>
+                <li>Việt Nam</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media" src="assets/img/lịch sử.jpg" alt="Ảnh chiến thắng Điện Biên Phủ" width="600"
+              height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Ảnh chiến thắng Điện Biên Phủ</h3>
+              <p class="card-desc">
+                Chiến thắng Điện Biên Phủ là một sự kiện lịch sử quan trọng, đánh dấu sự kết thúc của chiến tranh và mở
+                ra
+                một kỷ nguyên mới cho đất nước
+              </p>
+              <ul class="tag-list">
+                <li>Lịch sử</li>
+                <li>Chiến tranh</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+        </div><!-- /.project-grid -->
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Liên hệ ----- -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2 class="section-title">Liên hệ</h2>
+        <p class="section-sub">Mở cho các cơ hội thực tập &amp; việc làm Frontend.</p>
+
+        <ul class="contact-list">
+          <li><span class="contact-label">Email</span> <a
+              href="mailto:phamduonghuyiq@gmail.com">phamduonghuyiq@gmail.com</a></li>
+          <li><span class="contact-label">GitHub</span> <a
+              href="https://github.com/phamduonghuy">github.com/phamduonghuy</a></li>
+          <li><span class="contact-label">LinkedIn</span> <a
+              href="https://linkedin.com/in/phamduonghuy">linkedin.com/in/phamduonghuy</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- FOOTER                                                      -->
+  <!-- ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Phạm Dương Huy. Thiết kế &amp; xây dựng bằng HTML5 + CSS3.</p>
+      <a href="#top" class="to-top">↑ Lên đầu trang</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
