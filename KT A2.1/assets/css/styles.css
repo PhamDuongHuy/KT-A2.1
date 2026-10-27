@@ -17,8 +17,8 @@
   --color-accent: #e54444;       /* tím nhấn */
   --color-text: #1e293b;         /* chữ chính */
   --color-text-soft: #2e5c9c;    /* chữ phụ */
-  --color-bg: #c3d76c;           /* nền trang */
-  --color-surface: #eb84d9;      /* nền vùng nhấn */
+  --color-bg: #ffff00;           /* nền trang */
+  --color-surface: #ffffff;      /* nền vùng nhấn */
   --color-border: #0bf4d1;       /* viền */
   --color-chip: #eb9ca1;         /* nền chip kỹ năng */
 
